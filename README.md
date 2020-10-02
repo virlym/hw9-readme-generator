@@ -33,7 +33,7 @@
   ## **Usage**
   This README was generated with this program.<br>
   Demo of a README + license being created :<br>
-  ![Demo](https://github.com/virlym/hw9-readne-generator/blob/master/assets/readmeDemo.gif)
+  ![Demo](./assets/readmeDemo.gif)
   <br><br>
   
   ## **License**
