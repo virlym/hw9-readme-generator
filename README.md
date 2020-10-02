@@ -31,9 +31,9 @@
   <br><br>
   
   ## **Usage**
-  !! To be filled in when the project has working code !!
-  
-  Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+  This README was generated with this program.
+  Demo of a README + license being created :
+  ![Demo](https://github.com/virlym/hw9-readne-generator/blob/master/assets/readmeDemo.MKV)
   <br><br>
   
   ## **License**
