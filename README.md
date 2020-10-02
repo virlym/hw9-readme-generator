@@ -31,9 +31,9 @@
   <br><br>
   
   ## **Usage**
-  This README was generated with this program.
-  Demo of a README + license being created :
-  ![Demo](https://github.com/virlym/hw9-readne-generator/blob/master/assets/readmeDemo.MKV)
+  This README was generated with this program.<br>
+  Demo of a README + license being created :<br>
+  ![Demo](https://github.com/virlym/hw9-readne-generator/blob/master/assets/readmeDemo.gif)
   <br><br>
   
   ## **License**
