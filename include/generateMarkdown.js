@@ -1,5 +1,6 @@
 // function to generate markdown for README
-// Requires userNameAns, projectNameAns, licenseAns, emailAns, descriptionAns
+// Requires : userNameAns, projectNameAns, licenseAns, emailAns, descriptionAns
+// takes in an object with the mentioned parameters, populates a string using the object, then returns that string for the markdown file
 function generateMarkdown(data) {
 
   const generatedMarkdown = 

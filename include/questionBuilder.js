@@ -1,4 +1,6 @@
-//userNameAns, fullNameAns, projectNameAns, licenseAns, emailAns, descriptionAns
+// a function that defines the questions for inquirer
+// takes in no variables, returns a string of objects that inquirer can use for prompt
+// required variables for the markdown : userNameAns, fullNameAns, projectNameAns, licenseAns, emailAns, descriptionAns
 function questionBuilder() {
     questionArray = [
         {
@@ -11,7 +13,7 @@ function questionBuilder() {
             type: "input",
             message: "What is your full name?",
             name: "fullNameAns",
-            default: "User"
+            default: "Full Name"
         },
         {
             type: "input",

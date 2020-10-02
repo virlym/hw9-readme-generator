@@ -1,4 +1,5 @@
 // function to generate GNU license file (called COPYING.txt) text
+// takes in no variables, returns a string for the license file creation
 function generateGnuLicense() {
 
     const gnuLicense = 

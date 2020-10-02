@@ -6,14 +6,16 @@ const generateMitLicense = require("./include/generateMitLicense.js");
 const generateGnuLicense = require("./include/generateGnuLicense.js");
 const questionBuilder = require("./include/questionBuilder.js");
 
+// main function
+function main(){
 
-function init(){
-
+    // ask the questions defined in the questionBuilder
     inquirer
     .prompt(questionBuilder.questionBuilder())
     .then(function (response) {
+        // check which license option was selected and create the appropriate file
         if(response.licenseAns === "MIT"){
-            fs.writeFile(`LICENSE`, generateMitLicense.generateMitLicense(response.fullNameAns), 'utf-8', function (err) {
+            fs.writeFile(`./generatedFiles/LICENSE`, generateMitLicense.generateMitLicense(response.fullNameAns), 'utf-8', function (err) {
 
                 if (err) {
                     return console.log(err);
@@ -25,7 +27,7 @@ function init(){
             });
         }
         else if(response.licenseAns === "GNU"){
-            fs.writeFile(`COPYING.txt`, generateGnuLicense.generateGnuLicense(), 'utf-8', function (err) {
+            fs.writeFile(`./generatedFiles/COPYING.txt`, generateGnuLicense.generateGnuLicense(), 'utf-8', function (err) {
 
                 if (err) {
                     return console.log(err);
@@ -37,13 +39,14 @@ function init(){
             });
         }
 
-        fs.writeFile(`${response.projectNameAns}-README.md`, generateMarkdown.generateMarkdown(response), 'utf-8', function (err) {
+        //create the README file
+        fs.writeFile(`./generatedFiles/${response.projectNameAns}-README.md`, generateMarkdown.generateMarkdown(response), 'utf-8', function (err) {
 
             if (err) {
                 return console.log(err);
             }
 
-            console.log("Success!");
+            console.log("README created");
             return;
 
         });
@@ -52,4 +55,5 @@ function init(){
 
 }
 
-init();
+// run the program
+main();

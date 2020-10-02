@@ -1,5 +1,5 @@
 // function to generate MIT license file text
-// Requires fullName
+// Requires fullName to be passed in, returns the string for the license file creation
 function generateMitLicense(fullNameAns) {
     const currentYear = new Date().getFullYear();
     const mitLicense = 
